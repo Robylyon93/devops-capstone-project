@@ -61,28 +61,52 @@ def create_accounts():
 # LIST ALL ACCOUNTS
 ######################################################################
 
-# ... place you code here to LIST accounts ...
+@app.route("/accounts", methods=["GET"])
+def list_accounts():
+    """
+    List all the Accounts
+    This endpoint will list all the Accounts
+    """
+    pass
 
 
 ######################################################################
 # READ AN ACCOUNT
 ######################################################################
 
-# ... place you code here to READ an account ...
+@app.route("/accounts/<id>", methods=["GET"])
+def read_account():
+    """
+    Read an Account
+    This endpoint will read an Account
+    """
+    pass
 
 
 ######################################################################
 # UPDATE AN EXISTING ACCOUNT
 ######################################################################
 
-# ... place you code here to UPDATE an account ...
+@app.route("/accounts/<id>", methods=["PUT"])
+def update_account():
+    """
+    Update an Account
+    This endpoint will update an Account
+    """
+    pass
 
 
 ######################################################################
 # DELETE AN ACCOUNT
 ######################################################################
 
-# ... place you code here to DELETE an account ...
+@app.route("/accounts/<id>", methods=["DELETE"])
+def delete_account():
+    """
+    Delete an Account
+    This endpoint will delete an Account
+    """
+    pass
 
 
 ######################################################################
